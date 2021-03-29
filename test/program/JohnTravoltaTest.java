@@ -7,10 +7,10 @@ package program;
 
 import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.BeforeClass;
 
 /**
  *
@@ -18,22 +18,24 @@ import static org.junit.Assert.*;
  */
 public class JohnTravoltaTest {
     
-    public JohnTravoltaTest() {
+    private int jam_kerja = 52;
+    private double expResultGaji = 870000.0;
+    private int pengeluaran = 500;
+    private String expMessage = "John Butuh Cari Uang!";
+
+    @Test
+    public void testHitung_gaji() {
+        System.out.println("Fungsi Hitung Gaji");
+        JohnTravolta instance = new JohnTravolta();
+        double result = instance.hitung_gaji(jam_kerja);
+        assertEquals(expResultGaji, result, 0.0);
     }
 
     @Test
-    public void cekGaji() {
-        // TODO review the generated test code and remove the default call to fail.
-        JohnTravolta instance=new JohnTravolta();
-        double gaji=instance.hitung_gaji(52);
-        assertEquals(870000.0, gaji, 0.0);
-    }
-       @Test
-    public void cekNabung() {
-        // TODO review the generated test code and remove the default call to fail.
-        JohnTravolta instance=new JohnTravolta();
-        instance.gaji=870000;
-        int message =instance.nabung((int) 50000.0);
-        assertEquals(1, message, 0);
+    public void testNabung() {
+        System.out.println("Fungsi Menabung");
+        JohnTravolta instance = new JohnTravolta();
+        String result = instance.nabung((int)expResultGaji, pengeluaran);
+        assertEquals(expMessage, result);
     }
 }
