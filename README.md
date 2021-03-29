@@ -6,4 +6,4 @@ Our Group
 - Muhammad Aqil Pratama
 
 Berikut adalah flow dari program yang kami buat
-![Screenshot Flow Program](https://drive.google.com/file/d/1g6sJsA6h2SZ1NvZsre2P5hlRzfEpTKoj/view?usp=sharing)
+![Screenshot Flow Program](https://firebasestorage.googleapis.com/v0/b/bismillahpertama-b6465.appspot.com/o/Flow%20John%20Travolta.png?alt=media&token=2ebbf6c3-63fa-42c7-88e8-12bdfd799356)
